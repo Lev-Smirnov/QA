@@ -1,0 +1,25 @@
+clc,clear,close
+A = zeros(3, 2)
+B = eye(3)
+C = ones(2, 3)
+D = rand(2,2)
+M = [1 2 3; 4 5 6; 7 8 9]
+m1 = diag(M)
+m2 = M(1:2, 1:2)
+m3 = M(:, 1)
+m4 = M(1, :)
+m5 = M'
+p = [1 2 4]
+q = [1 2 4]
+P2 = conv(p, q)
+P3 = deconv(p, q)
+x = 1;
+P1 = polyval(p, x)
+p4 = polyder(p)
+p5 = polyint(p)
+t = [2 4]
+p6 = poly(t)
+t2 = [1 -6 8]
+p7 = roots(t2)
+D2 = [1 0 1]
+A3 = poly(diag(D2))
